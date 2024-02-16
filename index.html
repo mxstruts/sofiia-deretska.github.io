@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maksym Shatylo - Fullstack Dev</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="assets/MS_1.svg" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/775fe562db.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <!-- <i class="fa-solid fa-lines-leaning fa-2x"></i> -->
+      <img class="logo" src="assets/MS_1.svg" alt="logo" />
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="theme-switch" id="theme-switch">
+            <i class="fas fa-moon fa-fw"></i>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <img class="logo" src="assets/MS_1.svg" alt="logo" />
+
+      <!-- <i class="fa-solid fa-lines-leaning fa-2x fa-fw"></i> -->
+      <div class="hamburger-menu">
+        <div class="hamburger-right">
+          <div class="theme-switch-2" id="theme-switch-2">
+            <i class="fas fa-moon fa-fw fa-2x"></i>
+          </div>
+          <i class="fa-solid fa-bars hamburger-icon fa-fw fa-2x" onclick="toggleMenu()"></i>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-circle.png" alt="Sofiia Deretska profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sofiia Deretska</h1>
+        <p class="section__text__p2">Graphic Designer</p>
+
+        <p><i class="fa-solid fa-location-dot fa-fw"></i>&nbsp;Windsor, Ontario • from UA</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/CV-Sofiia Deretska.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/sofiia-deretska-66a1412aa/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fa-brands fa-github fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/poster1.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <i class="fa-solid fa-chalkboard-user fa-2x"></i>
+              <h3>Experience</h3>
+              <p>2+ years <br />Graphic Design and Applications Development</p>
+            </div>
+            <div class="details-container">
+              <i class="fa-solid fa-user-graduate fa-2x"></i>
+              <h3>Education</h3>
+              <p>
+                Ontario Advanced College Diploma<br />Graphic Design<br /><a
+                  href="https://stclaircollege.ca/"
+                  >St.Clair College</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionate and creative graphic designer with a keen eye for visual aesthetics and a
+              commitment to delivering impactful design solutions. Proven experience in translating
+              client visions into compelling and effective designs across various platforms.
+              Proficient in Adobe Creative Suite, with a strong understanding of design principles
+              and trends. Excels in collaborating with cross-functional teams to bring projects from
+              concept to completion. Open to new challenges and dedicated to staying updated on
+              industry trends to consistently produce high-quality and innovative designs. Let's
+              connect and discuss how we can bring your visual ideas to life!
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="arrow" href="#experience"
+        ><i class="fa-solid fa-angle-down fa-2x icon arrow"></i
+      ></a>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-layer-group fa-2x"></i>
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-pen-nib fa-2x"></i>
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-figma fa-2x"></i>
+                <div>
+                  <h3>Figma</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-cube fa-2x"></i>
+                <div>
+                  <h3>InDesign</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-cubes fa-2x"></i>
+                <div>
+                  <h3>After Effects</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-html5 fa-2x"></i>
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Graphic Development</h2>
+            <div class="article-container">
+              <article>
+                <i class="fa-solid fa-icons fa-2x"></i>
+                <div>
+                  <h3>Canva</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-wand-magic-sparkles fa-2x"></i>
+                <div>
+                  <h3>Krita</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-paintbrush fa-2x"></i>
+                <div>
+                  <h3>Clip Studio</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-solid fa-object-group fa-2x"></i>
+                <div>
+                  <h3>Lightroom</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-microsoft fa-2x"></i>
+                <div>
+                  <h3>Microsoft 365</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <i class="fa-brands fa-git fa-2x"></i>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="arrow" href="#projects"> <i class="fa-solid fa-angle-down fa-2x icon arrow"></i></a>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container container-1">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container container-2">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container container-3">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="arrow" href="#contact">
+        <i class="fa-solid fa-angle-down fa-2x icon arrow"></i>
+      </a>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+          <p><a href="mailto:shatilo.max@gmail.com">sofideretska@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <p>
+            <a href="https://www.linkedin.com/in/sofiia-deretska-66a1412aa/" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sofiia Deretska. All Rights Reserved.</p>
+    </footer>
+    <button id="go-up-btn" onclick="scrollToTop()">Go Up</button>
+
+    <script src="script.js"></script>
+    <script src="dark-theme.js"></script>
+    <script src="go-up.js"></script>
+  </body>
+</html>
