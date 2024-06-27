@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofiia Deretska - Graphic Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/775fe562db.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <!-- <i class="fa-solid fa-lines-leaning fa-2x"></i> -->
+       <a href="index.html"><img class="logo" src="assets/Logo_SD.png" alt="logo" /></a>
+      
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <div class="theme-switch" id="theme-switch">
+            <i class="fas fa-moon fa-fw"></i>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <a href="index.html"><img class="logo" src="assets/Logo_SD.png" alt="logo" /></a>
+
+      <!-- <i class="fa-solid fa-lines-leaning fa-2x fa-fw"></i> -->
+      <div class="hamburger-menu">
+        <div class="hamburger-right">
+          <div class="theme-switch-2" id="theme-switch-2">
+            <i class="fas fa-moon fa-fw fa-2x"></i>
+          </div>
+          <i class="fa-solid fa-bars hamburger-icon fa-fw fa-2x" onclick="toggleMenu()"></i>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+        </div>
+      </div>
+      <a class="arrow" href="#projects"> <i class="fa-solid fa-angle-down fa-2x icon arrow"></i></a>
+    </section>
+          <div class="details-container color-container container-2">
+            <div class="article-container">
+              <img src="assets/McVities horizontal.png" alt="McVities" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">McVities</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Next Project
+              </button>
+        
+          </div>
+        </div>
+      </div>
+      <a class="arrow" href="#contact">
+        <i class="fa-solid fa-angle-down fa-2x icon arrow"></i>
+      </a>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="fa-solid fa-envelope fa-2x"></i>
+          <p><a href="mailto:shatilo.max@gmail.com">sofideretska@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <i class="fa-brands fa-linkedin fa-2x"></i>
+          <p>
+            <a href="https://www.linkedin.com/in/sofiia-deretska-66a1412aa/" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sofiia Deretska. All Rights Reserved.</p>
+    </footer>
+    <button id="go-up-btn" onclick="scrollToTop()">Go Up</button>
+
+    <script src="script.js"></script>
+    <script src="dark-theme.js"></script>
+    <script src="go-up.js"></script>
+  </body>
+</html>

@@ -13,3 +13,26 @@ function toggleMenu() {
     }
   });
 }
+
+
+// Get the spark container
+const sparkContainer = document.getElementById('spark-container');
+
+// Function to create a spark element
+function createSpark() {
+  const spark = document.createElement('div');
+  spark.classList.add('spark');
+  spark.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+  sparkContainer.appendChild(spark);
+
+  // Remove the spark from DOM after animation ends
+  spark.addEventListener('animationend', () => {
+    spark.remove();
+  });
+}
+
+// Create sparks at intervals
+setInterval(createSpark, 200); // Adjust interval (milliseconds) as needed
+
+
+

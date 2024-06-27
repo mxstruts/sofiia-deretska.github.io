@@ -116,6 +116,7 @@ a:hover {
 
 .menu-links {
   position: absolute;
+  z-index: 90;
   top: 100%;
   right: 0;
   background-color: white;
@@ -465,7 +466,7 @@ footer p {
   right: 30px;
   display: none;
   padding: 10px;
-  background-color: #007bffe2;
+  background-color: rgb(53, 53, 53);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -480,7 +481,7 @@ footer p {
 /* DARK MODE  */
 
 .dark-theme {
-  background-color: #000000;
+  background-color: #222a32;
   color: #fff;
 }
 
@@ -502,7 +503,7 @@ footer p {
 }
 .dark-theme .details-container {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #222a32;
 }
 
 .dark-theme .experience-sub-title{
@@ -535,5 +536,26 @@ footer p {
 
 
 
+
+@keyframes spark {
+  0% {
+    transform: translateY(0) rotateZ(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotateZ(720deg) scale(0);
+    opacity: 0;
+  }
+}
+
+.spark {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #ffd700; /* Adjust color as needed */
+  border-radius: 50%;
+  animation: spark 4s linear infinite;
+  pointer-events: none; /* Ensure sparks don't interfere with clickable elements */
+}
 
 
